@@ -384,6 +384,7 @@ GameObject:
   - component: {fileID: 1559574456}
   - component: {fileID: 1559574458}
   - component: {fileID: 1559574457}
+  - component: {fileID: 1559574459}
   m_Layer: 5
   m_Name: MainOrExit
   m_TagString: Untagged
@@ -443,7 +444,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uBA54\uC778\uD654\uBA74\uC73C\uB85C \uAC00\uAE30: M"
+  m_Text: "\uBA54\uC778\uD654\uBA74\uC73C\uB85C \uAC00\uAE30: R"
 --- !u!222 &1559574458
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -452,6 +453,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559574455}
   m_CullTransparentMesh: 0
+--- !u!114 &1559574459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559574455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c3db0db17e45340a3fa60ae588b566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1958745452
 GameObject:
   m_ObjectHideFlags: 0
