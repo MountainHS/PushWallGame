@@ -703,53 +703,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157399755}
   m_CullTransparentMesh: 0
---- !u!1 &1259136778
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1259136780}
-  - component: {fileID: 1259136779}
-  m_Layer: 0
-  m_Name: Select Stage Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1259136779
+--- !u!114 &1259136779 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6075690876099696218, guid: c984860ad9aa2a24fac784244463dc1c, type: 3}
+  m_PrefabInstance: {fileID: 6075690875110682961}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259136778}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7cc13f45297a0742b9e13a22008b5ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonStageA: {fileID: 1684667626}
-  buttonStageB: {fileID: 1956155130}
-  speedRun: {fileID: 385497523}
-  enableSpeedrun: 0
---- !u!4 &1259136780
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259136778}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 237, y: 293.4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1684667626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,3 +1039,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1956155130}
   m_CullTransparentMesh: 0
+--- !u!1001 &6075690875110682961
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6075690876099696218, guid: c984860ad9aa2a24fac784244463dc1c, type: 3}
+      propertyPath: buttonStageA
+      value: 
+      objectReference: {fileID: 1684667626}
+    - target: {fileID: 6075690876099696218, guid: c984860ad9aa2a24fac784244463dc1c, type: 3}
+      propertyPath: buttonStageB
+      value: 
+      objectReference: {fileID: 1956155130}
+    - target: {fileID: 6075690876099696218, guid: c984860ad9aa2a24fac784244463dc1c, type: 3}
+      propertyPath: speedRun
+      value: 
+      objectReference: {fileID: 385497523}
+    - target: {fileID: 6075690876099696219, guid: c984860ad9aa2a24fac784244463dc1c, type: 3}
+      propertyPath: m_Name
+      value: Stage Select Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075690876099696221, guid: c984860ad9aa2a24fac784244463dc1c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 237
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075690876099696221, guid: c984860ad9aa2a24fac784244463dc1c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 293.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075690876099696221, guid: c984860ad9aa2a24fac784244463dc1c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075690876099696221, guid: c984860ad9aa2a24fac784244463dc1c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075690876099696221, guid: c984860ad9aa2a24fac784244463dc1c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075690876099696221, guid: c984860ad9aa2a24fac784244463dc1c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075690876099696221, guid: c984860ad9aa2a24fac784244463dc1c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075690876099696221, guid: c984860ad9aa2a24fac784244463dc1c, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075690876099696221, guid: c984860ad9aa2a24fac784244463dc1c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075690876099696221, guid: c984860ad9aa2a24fac784244463dc1c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075690876099696221, guid: c984860ad9aa2a24fac784244463dc1c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c984860ad9aa2a24fac784244463dc1c, type: 3}
