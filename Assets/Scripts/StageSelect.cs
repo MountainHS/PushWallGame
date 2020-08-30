@@ -10,6 +10,87 @@ public class StageSelect : MonoBehaviour
     public GameObject speedRun;
     bool stageAOn = false, stageBOn = false;
 
+    public void SelectStageA_1()
+    {
+        SceneManager.LoadScene("A-1");
+    }
+    public void SelectStageA_2()
+    {
+        SceneManager.LoadScene("A-2");
+    }
+    public void SelectStageA_3()
+    {
+        SceneManager.LoadScene("A-3");
+    }
+    public void SelectStageA_4()
+    {
+        SceneManager.LoadScene("A-4");
+    }
+    public void SelectStageA_5()
+    {
+        SceneManager.LoadScene("A-5");
+    }
+    public void SelectStageA_6()
+    {
+        SceneManager.LoadScene("A-6");
+    }
+    public void SelectStageA_7()
+    {
+        SceneManager.LoadScene("A-7");
+    }
+    public void SelectStageA_8()
+    {
+        SceneManager.LoadScene("A-8");
+    }
+    public void SelectStageA_9()
+    {
+        SceneManager.LoadScene("A-9");
+    }
+    public void SelectStageA_10()
+    {
+        SceneManager.LoadScene("A-10");
+    }
+    public void SelectStageB_1()
+    {
+        SceneManager.LoadScene("B-1");
+    }
+    public void SelectStageB_2()
+    {
+        SceneManager.LoadScene("B-2");
+    }
+    public void SelectStageB_3()
+    {
+        SceneManager.LoadScene("B-3");
+    }
+    public void SelectStageB_4()
+    {
+        SceneManager.LoadScene("B-4");
+    }
+    public void SelectStageB_5()
+    {
+        SceneManager.LoadScene("B-5");
+    }
+    public void SelectStageB_6()
+    {
+        SceneManager.LoadScene("B-6");
+    }
+    public void SelectStageB_7()
+    {
+        SceneManager.LoadScene("B-7");
+    }
+    public void SelectStageB_8()
+    {
+        SceneManager.LoadScene("B-8");
+    }
+    public void SelectStageB_9()
+    {
+        SceneManager.LoadScene("B-9");
+    }
+    public void SelectStageB_10()
+    {
+        SceneManager.LoadScene("B-10");
+    }
+
     public void SelectStageA()
     {
         buttonStageA.SetActive(false);
@@ -21,7 +102,7 @@ public class StageSelect : MonoBehaviour
     {
         buttonStageA.SetActive(false);
         buttonStageB.SetActive(false);
-        speedRun.SetActive(true);
+        speedRun.SetActive(true);   
         stageBOn = true;
     }
 
