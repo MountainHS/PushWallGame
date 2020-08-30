@@ -441,10 +441,10 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uBA54\uC778\uD654\uBA74\uC73C\uB85C \uAC00\uAE30: R"
+  m_Text: "\uBA54\uC778\uD654\uBA74\uC73C\uB85C \uAC00\uAE30: R\n\uC885\uB8CC: ESC"
 --- !u!222 &1559574458
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -16,5 +16,16 @@ public class MainOrExit : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R) == true)
             SceneManager.LoadScene("6-1");
+        
+        if (Input.GetKeyDown("escape"))
+        {
+            #if UNITY_EDITOR
+                            UnityEditor.EditorApplication.isPlaying = false;
+            #elif UNITY_WEBPLAYER
+                            Application.OpenURL("http://google.com");
+            #else
+                        Application.Quit();
+            #endif
+        }
     }
 }
