@@ -29,14 +29,20 @@ public class move : MonoBehaviour
 		{
 			a = 1;
 			b = 1;
-			target = new Vector3((int)(transform.position.x + 1.5f), 0.45f, (int)(transform.position.z+0.5f));
+			target = new Vector3((int)(transform.position.x + 1.5f), 0.45f, (int)(transform.position.z));
 		}
-		if (a == 1&&b==1)
+		if (a == 1&&b==1&&(int)(transform.position.x + 1f) <= 1)
         {
 			Vector3 velo = Vector3.zero;
 			transform.position = Vector3.SmoothDamp(transform.position, target, ref velo, 0.02f);
 		}
-		if (transform.position.x > (int)(transform.position.x + 1.5f) - 0.01&&b==1)
+        else if(a == 1 && b == 1 && (int)(transform.position.x + 1f) > 1)
+        {
+			transform.position = new Vector3((int)(transform.position.x), 0.45f, (int)(transform.position.z));
+			a = 0;
+			b = 0;
+        }
+		if (transform.position.x > (int)(transform.position.x + 1f) - 0.01&&b==1)
         {
 			transform.position = target;
 			a = 0;
@@ -46,14 +52,20 @@ public class move : MonoBehaviour
 		{
 			a = 1;
 			b = 2;
-			target = new Vector3((int)(transform.position.x - 1.5f), 0.45f, (int)(transform.position.z+0.5f));
+			target = new Vector3((int)(transform.position.x - 1.5f), 0.45f, (int)(transform.position.z));
 		}
-		if (a == 1&&b==2)
+		if (a == 1&&b==2 && (int)(transform.position.x - 1f) >= -1)
 		{
 			Vector3 velo = Vector3.zero;
 			transform.position = Vector3.SmoothDamp(transform.position, target, ref velo, 0.02f);
 		}
-		if (transform.position.x < (int)(transform.position.x - 1.5f) + 0.01&&b==2)
+		else if (a == 1 && b == 2 && (int)(transform.position.x - 1f) < -1)
+		{
+			transform.position = new Vector3((int)(transform.position.x), 0.45f, (int)(transform.position.z));
+			a = 0;
+			b = 0;
+		}
+		if (transform.position.x < (int)(transform.position.x - 1f) + 0.01&&b==2)
 		{
 			transform.position = target;
 			a = 0;
@@ -63,14 +75,20 @@ public class move : MonoBehaviour
 		{
 			a = 1;
 			b = 3;
-			target = new Vector3((int)(transform.position.x+0.5f), 0.45f, (int)(transform.position.z + 1.5f));
+			target = new Vector3((int)(transform.position.x), 0.45f, (int)(transform.position.z + 1.5f));
 		}
-		if (a == 1 && b == 3)
+		if (a == 1 && b == 3 && (int)(transform.position.z + 1f) <= 1)
 		{
 			Vector3 velo = Vector3.zero;
 			transform.position = Vector3.SmoothDamp(transform.position, target, ref velo, 0.02f);
 		}
-		if (transform.position.z > (int)(transform.position.z + 1.5f) + 0.01 && b == 3)
+		else if (a == 1 && b == 3 && (int)(transform.position.z + 1f) > 1)
+		{
+			transform.position = new Vector3((int)(transform.position.x), 0.45f, (int)(transform.position.z));
+			a = 0;
+			b = 0;
+		}
+		if (transform.position.z > (int)(transform.position.z + 1f) - 0.01 && b == 3)
 		{
 			transform.position = target;
 			a = 0;
@@ -80,14 +98,20 @@ public class move : MonoBehaviour
 		{
 			a = 1;
 			b = 4;
-			target = new Vector3((int)(transform.position.x+0.5f), 0.45f, (int)(transform.position.z - 1.5f));
+			target = new Vector3((int)(transform.position.x), 0.45f, (int)(transform.position.z - 1.5f));
 		}
-		if (a == 1 && b == 4)
+		if (a == 1 && b == 4 && (int)(transform.position.z - 1f) >= -1)
 		{
 			Vector3 velo = Vector3.zero;
 			transform.position = Vector3.SmoothDamp(transform.position, target, ref velo, 0.02f);
 		}
-		if (transform.position.z < (int)(transform.position.z - 1.5f) + 0.01 && b == 4)
+		else if (a == 1 && b == 4 && (int)(transform.position.z - 1f) < -1)
+		{
+			transform.position = new Vector3((int)(transform.position.x), 0.45f, (int)(transform.position.z));
+			a = 0;
+			b = 0;
+		}
+		if (transform.position.z < (int)(transform.position.z - 1f) + 0.01 && b == 4)
 		{
 			transform.position = target;
 			a = 0;
