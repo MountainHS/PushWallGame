@@ -446,7 +446,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!114 &754526916
 MonoBehaviour:
@@ -457,12 +457,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 754526910}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c2de9b7bc7b85a48ba02e958e5a5f7d, type: 3}
+  m_Script: {fileID: 11500000, guid: b762341232fc8404098fcdd81f62951e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  a: 0
-  b: 0
-  target: {x: 0, y: 0, z: 0}
+  stageManagerObject: {fileID: 1999596586}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +756,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef20b85c1dba80499ccef8c1833e58d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VBN: 3
+  HBN: 3
 --- !u!4 &2086599629 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4375202761610167432, guid: 9cc64d9549e96c84c8a7538e06c78a08, type: 3}
