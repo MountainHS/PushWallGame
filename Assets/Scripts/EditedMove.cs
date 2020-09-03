@@ -30,7 +30,7 @@ public class EditedMove : MonoBehaviour
 		maxHorizontal = (int)stageManagerScript.HBN / 2;
 		maxVertical = (int)stageManagerScript.VBN / 2;
 	}
-	// 반올림하는 함수 잇어야할듯 스크립트 상에서 연산할때랑 유니티 상에 표현할때 소수 처리방식이 다른게 문제인듯
+	// 소수자릿수가 너무 커지면 문제가 생기는듯 유니티 상에서 소숫점 처리과정에서
     void Update()
 	{
 		currentPos = transform.position;
@@ -64,6 +64,9 @@ public class EditedMove : MonoBehaviour
 
 			Vector3 inputPos = new Vector3 (inputX, 0, inputZ);
 			destPos = inputPos + currentPos;  // 움직일 목표 위치
+			destPos.x = (float)(Math.Truncate(destPos.x * 1000) / 1000);	// 소수점 자르기
+			destPos.y = (float)(Math.Truncate(destPos.y * 1000) / 1000);
+			destPos.z = (float)(Math.Truncate(destPos.z * 1000) / 1000);
 			Debug.Log(destPos);
 			if (Math.Abs(destPos.x) <= maxHorizontal && Math.Abs(destPos.z) <= maxVertical)
 			{
@@ -71,20 +74,18 @@ public class EditedMove : MonoBehaviour
 				moveActive = true;
 				activeDelayTime = true;
 			}
-			else
-				destPos = new Vector3(0f, 0f, 0f);
 		}
 
-		if (moveActive)     // moveActive가 거짓이라면 움직일 위치 설정
+		if (moveActive) 
 		{
-			Vector3 velo = Vector3.zero;
-			transform.position = Vector3.SmoothDamp(currentPos, destPos, ref velo, 0.02f);
-
 			if (currentPos == destPos)
 			{
 				moveActive = false;
 				moveRecog = true;
 			}
+
+			Vector3 velo = Vector3.zero;
+			transform.position = Vector3.SmoothDamp(currentPos, destPos, ref velo, 0.02f);
 		}
 	}
 }
