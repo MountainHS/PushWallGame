@@ -16,7 +16,7 @@ public class NextStage : MonoBehaviour
     {
         if(other.tag == "goal")
         {
-            if (PlayerPrefs.GetInt("enableSpeedrun") == 1 && PlayerPrefs.GetInt("currentStage") != 11))
+            if (PlayerPrefs.GetInt("enableSpeedrun") == 1 && PlayerPrefs.GetInt("currentStage") != 11)
             {
                 timerScript.gameClear = true;
             }
