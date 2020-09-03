@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/Scripts/EditedMove.cs.meta
-guid: b762341232fc8404098fcdd81f62951e
-=======
-guid: cef4365afd9db784b96a36851079af79
->>>>>>> develop:Assets/Scripts/Application Quit.cs.meta
+guid: 744d74974102f9345ad9e2cf8701a0af
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
